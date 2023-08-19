@@ -1,10 +1,12 @@
 const Menu = () => {
   return (
-    <ul className="flex">
-      <li>About</li>
-      <li>Projects</li>
-      <li>Contact</li>
-    </ul>
+    <nav className="hidden md:flex md:justify-center">
+      <ul className="flex flex-col  md:flex-row gap-4 ">
+        <li>About</li>
+        <li>Projects</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
   );
 };
 

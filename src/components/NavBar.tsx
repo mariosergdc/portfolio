@@ -2,8 +2,8 @@ import Menu from "./Menu";
 
 const NavBar = () => {
   return (
-    <header className="flex navbar py-4 lg:px-8">
-      <h1 className="">MarioSergDC</h1>
+    <header className="container grid grid-cols-3 navbar h-10 items-center ">
+      <h1 className="pl-2">MarioSergDC</h1>
       <Menu />
     </header>
   );
