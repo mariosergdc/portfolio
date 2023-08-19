@@ -2,10 +2,12 @@ import Menu from "./Menu";
 
 const NavBar = () => {
   return (
-    <header className="container grid grid-cols-3 navbar h-10 items-center ">
-      <h1 className="pl-2">MarioSergDC</h1>
-      <Menu />
-    </header>
+    <div className="sticky top-0 z-40 w-full h-16 lg:border-b lg:border-b-slate-500/10 bg-transparent shadow-slate-50">
+      <header className="container grid grid-cols-3 navbar h-full items-center mx-auto ">
+        <h1 className="text-2xl pl-2 md:pl-1 font-serif">MarioSergDC</h1>
+        <Menu />
+      </header>
+    </div>
   );
 };
 
