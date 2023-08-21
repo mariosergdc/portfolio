@@ -1,3 +1,49 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.brand {
+  /* background-color: red; */
+  overflow: hidden;
+  width: fit-content;
+  padding-block: 0;
+  padding-right: 0.2rem;
+  border-right: solid black 2px;
+  animation: textwriter 1s steps(11), caret 0.5s step-end infinite alternate;
+}
+
+@keyframes textwriter {
+  from {
+    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+  }
+  to {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+@keyframes caret {
+  50% {
+    border-right: transparent;
+  }
+}
+
+.nav-links {
+  position: relative;
+}
+
+.nav-links::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  height: 2px;
+  width: 100%;
+  left: 0;
+  background-color: black;
+  transition: 0.3s;
+  transition-timing-function: ease-in-out;
+  transform: scaleX(0);
+}
+
+.nav-links:hover::after {
+  transform: scaleX(1);
+}
