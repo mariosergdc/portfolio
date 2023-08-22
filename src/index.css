@@ -4,6 +4,7 @@
 
 .brand {
   /* background-color: red; */
+  cursor: pointer;
   overflow: hidden;
   width: fit-content;
   padding-block: 0;
@@ -29,16 +30,18 @@
 
 .nav-links {
   position: relative;
+  font-weight: 500;
+  cursor: pointer;
 }
 
 .nav-links::after {
   content: "";
   position: absolute;
-  bottom: -2px;
+  bottom: 0px;
   height: 2px;
   width: 100%;
   left: 0;
-  background-color: black;
+  background-color: rgb(21, 7, 54);
   transition: 0.3s;
   transition-timing-function: ease-in-out;
   transform: scaleX(0);
@@ -46,4 +49,49 @@
 
 .nav-links:hover::after {
   transform: scaleX(1);
+}
+
+.brand:hover {
+  animation-name: surprise;
+  -webkit-animation-name: surprise;
+  -moz-animation-name: surprise;
+  animation-duration: 0.8s;
+  -webkit-animation-duration: 0.8s;
+  -moz-animation-duration: 0.8s;
+}
+
+@keyframes surprise {
+  0% {
+    transform: rotate(0deg) scale(1, 1);
+  }
+  10% {
+    transform: rotate(7deg) scale(1.5, 1.5);
+  }
+  20% {
+    transform: rotate(-7deg) scale(1.5, 1.5);
+  }
+  30% {
+    transform: rotate(7deg) scale(1.5, 1.5);
+  }
+  40% {
+    transform: rotate(-7deg) scale(1.5, 1.5);
+  }
+  50% {
+    transform: rotate(7deg) scale(1.5, 1.5);
+  }
+  60% {
+    transform: rotate(-7deg) scale(1.5, 1.5);
+  }
+  70% {
+    transform: rotate(7deg) scale(1.5, 1.5);
+  }
+  80% {
+    transform: rotate(-7deg) scale(1.5, 1.5);
+  }
+  90% {
+    transform: rotate(7deg) scale(1.5, 1.5);
+  }
+  100% {
+    transform: rotate(0deg) scale(1, 1);
+  }
 }
