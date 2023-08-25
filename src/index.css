@@ -96,10 +96,7 @@
   }
 }
 
-/* .main {
-  height: calc(100vh - (4rem));
-} */
-
+.home,
 .section-1,
 .section-2,
 .section-3 {
@@ -107,6 +104,6 @@
   height: calc(100vh - 4rem);
 }
 
-.main {
+html {
   scroll-behavior: smooth;
 }
