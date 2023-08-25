@@ -100,14 +100,11 @@
   height: calc(100vh - (4rem));
 } */
 
-.section-1 {
-  scroll-margin-top: 4rem;
-  height: calc(100vh - 4rem);
-}
-
+.section-1,
 .section-2,
 .section-3 {
-  height: 100vh;
+  scroll-margin-top: 4rem;
+  height: calc(100vh - 4rem);
 }
 
 .main {
