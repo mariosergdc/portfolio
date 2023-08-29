@@ -10,31 +10,35 @@ export default function App() {
       <main className="main w-full">
         <section
           id="home"
-          className="home flex content-center justify-center flex-wrap
+          className="home flex flex-col content-center justify-center flex-wrap
           bg-gradient-to-tr from-sky-900 via-transparent via-80% to-white/[0.9]"
         >
           <div>Imagen de set up hero</div>
+          <div>I'm Mario Domínguez</div>
+          <div>Web Developer</div>
+          <div>Social Media</div>
+          <div>Download CV</div>
         </section>
         <section
-          id="section-1"
-          className="section-1 flex content-center justify-center flex-wrap
+          id="section-about"
+          className="section-about flex content-center justify-center flex-wrap
           bg-gradient-to-tr from-sky-950 via-transparent via-80% to-white/[0.9]"
         >
           <div>About</div>
         </section>
         <section
-          id="section-2"
-          className="section-2 flex content-center justify-center flex-wrap
+          id="section-projects"
+          className="section-projects flex content-center justify-center flex-wrap
         bg-gradient-to-tr from-sky-900 via-transparent via-80% to-white/[0.9]"
         >
-          eeee
+          Projects
         </section>
         <section
-          id="section-3"
-          className="section-3 flex content-center justify-center flex-wrap
+          id="section-contact"
+          className="section-contact flex content-center justify-center flex-wrap
         bg-gradient-to-tr from-sky-950 via-transparent via-80% to-white/[0.9]"
         >
-          q
+          Contact
         </section>
       </main>
     </div>

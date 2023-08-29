@@ -7,15 +7,15 @@ const Menu = () => {
         </li>
         <li>|</li>
         <li className="nav-links">
-          <a href="#section-1">About</a>
+          <a href="#section-about">About</a>
         </li>
         <li>|</li>
         <li className="nav-links">
-          <a href="#section-2">Projects</a>
+          <a href="#section-projects">Projects</a>
         </li>
         <li>|</li>
         <li className="nav-links">
-          <a href="#section-3">Contact</a>
+          <a href="#section-contact">Contact</a>
         </li>
       </ul>
     </nav>

@@ -51,7 +51,7 @@
   transform: scaleX(1);
 }
 
-.brand:hover {
+.brand-container:hover img {
   animation-name: surprise;
   -webkit-animation-name: surprise;
   -moz-animation-name: surprise;
@@ -97,9 +97,9 @@
 }
 
 .home,
-.section-1,
-.section-2,
-.section-3 {
+.section-about,
+.section-projects,
+.section-contact {
   scroll-margin-top: 4rem;
   height: calc(100vh - 4rem);
 }
