@@ -1,4 +1,5 @@
 import Menu from "./Menu";
+import RightMenu from "./RightMenu";
 
 const NavBar = () => {
   return (
@@ -14,6 +15,7 @@ const NavBar = () => {
           </h1>
         </div>
         <Menu />
+        <RightMenu />
       </header>
     </div>
   );
