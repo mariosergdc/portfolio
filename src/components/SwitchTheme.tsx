@@ -1,10 +1,25 @@
-import { useState } from "react";
+import { useState, useContext, useEffect } from "react";
 import "./SwitchTheme.css";
+import ThemeContext from "./context/ThemeProvider";
 
 const SwitchTheme = () => {
   const [isOn, setIsOn] = useState(false);
+  const { theme, handleTheme } = useContext(ThemeContext);
+
+  useEffect(() => {
+    if (theme === "dark") {
+      setIsOn(false);
+    } else {
+      setIsOn(true);
+    }
+  }, [theme]);
 
   const handleToggle = () => {
+    if (theme === "dark") {
+      handleTheme("light");
+    } else {
+      handleTheme("dark");
+    }
     setIsOn(!isOn);
   };
 
@@ -14,7 +29,7 @@ const SwitchTheme = () => {
         type="checkbox"
         name="toggle"
         id="toggle"
-        className="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-2 appearance-none cursor-pointer"
+        className="toggle-checkbox absolute block w-6 h-6 rounded-full bg-black border-gray-200 border-2 appearance-none cursor-pointer"
         checked={isOn}
         onChange={handleToggle}
       />

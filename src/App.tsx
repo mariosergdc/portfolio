@@ -1,10 +1,12 @@
+import { useContext } from "react";
 import NavBar from "./components/NavBar";
+import ThemeContext from "./components/context/ThemeProvider";
 
 export default function App() {
+  const { theme } = useContext(ThemeContext);
   return (
     <div
-      className="app relative flex items-center min-h-screen flex-col
-    bg-gradient-to-tr from-sky-800 via-transparent via-80% to-white/[0.9]"
+      className={`${theme} app relative flex items-center min-h-screen flex-col bg-gradient-to-tr from-sky-800 via-transparent "via-80% to-white/[0.9]"`}
     >
       <NavBar />
       <main className="main w-full">

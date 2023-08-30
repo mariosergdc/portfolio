@@ -6,6 +6,6 @@
 
 .toggle-checkbox:checked {
   left: calc(100% - 24px);
-  border-color: #ffffff;
-  background-color: #000000;
+  border-color: rgb(107, 114, 128);
+  background-color: #ffffff;
 }
