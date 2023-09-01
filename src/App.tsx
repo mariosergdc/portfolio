@@ -12,32 +12,38 @@ export default function App() {
       <main className="main w-full">
         <section
           id="home"
-          className="home flex flex-col content-center justify-center flex-wrap
+          className="home relative flex flex-col content-center justify-center flex-wrap
           bg-gradient-to-tr from-sky-900 via-transparent via-80% to-white/[0.9]"
         >
-          <div>Imagen de set up hero</div>
-          <div>I'm Mario Domínguez</div>
-          <div>Web Developer</div>
-          <div>Social Media</div>
-          <div>Download CV</div>
+          <div className="absolute h-full w-full flex items-center justify-center text-9xl text-slate-950">
+            Imagen de set up hero
+          </div>
+          <div className="text-9xl z-10 text-white bg-black mix-blend-screen text-opacity-50">
+            I'm Mario
+          </div>
+          <div className="text-4xl z-10">
+            <code>&lt;</code>Web Developer<code>/&gt;</code>
+          </div>
+          <div className="z-10">Social Media</div>
+          <div className="z-10">Download CV</div>
         </section>
         <section
-          id="section-about"
-          className="section-about flex content-center justify-center flex-wrap
+          id="about"
+          className="about flex content-center justify-center flex-wrap
           bg-gradient-to-tr from-sky-950 via-transparent via-80% to-white/[0.9]"
         >
           <div>About</div>
         </section>
         <section
-          id="section-projects"
-          className="section-projects flex content-center justify-center flex-wrap
+          id="projects"
+          className="projects flex content-center justify-center flex-wrap
         bg-gradient-to-tr from-sky-900 via-transparent via-80% to-white/[0.9]"
         >
           Projects
         </section>
         <section
-          id="section-contact"
-          className="section-contact flex content-center justify-center flex-wrap
+          id="contact"
+          className="contact flex content-center justify-center flex-wrap
         bg-gradient-to-tr from-sky-950 via-transparent via-80% to-white/[0.9]"
         >
           Contact

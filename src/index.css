@@ -97,9 +97,9 @@
 }
 
 .home,
-.section-about,
-.section-projects,
-.section-contact {
+.about,
+.projects,
+.contact {
   scroll-margin-top: 4rem;
   height: calc(100vh - 4rem);
 }
