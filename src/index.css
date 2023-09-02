@@ -117,3 +117,24 @@ html {
   color: rgb(0, 0, 0);
   background-color: rgb(255, 255, 255);
 }
+
+.mario {
+  background-image: url("/src/assets/react.svg");
+  background-clip: text;
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-position: 0 0;
+  animation: move-background 10s linear infinite;
+}
+
+@keyframes move-background {
+  0% {
+    background-position: left center;
+  }
+  50% {
+    background-position: right center;
+  }
+  100% {
+    background-position: left center;
+  }
+}

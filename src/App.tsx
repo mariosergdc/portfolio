@@ -18,7 +18,7 @@ export default function App() {
           <div className="absolute h-full w-full flex items-center justify-center text-9xl text-slate-950">
             Imagen de set up hero
           </div>
-          <div className="text-9xl z-10 text-white bg-black mix-blend-screen text-opacity-50">
+          <div className="mario text-9xl z-10 text-white bg-black mix-blend-screen text-opacity-10">
             I'm Mario
           </div>
           <div className="text-4xl z-10">
