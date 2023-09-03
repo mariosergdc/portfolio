@@ -101,7 +101,7 @@
 .projects,
 .contact {
   scroll-margin-top: 4rem;
-  height: calc(100vh - 4rem);
+  min-height: calc(100vh - 4rem);
 }
 
 html {
@@ -119,15 +119,18 @@ html {
 }
 
 .mario {
-  background-image: url("/src/assets/react.svg");
+  background-image: url("/src/assets/back.jpeg");
   background-clip: text;
+  /* text-transform: uppercase; */
+  font-size: 16vw;
   background-repeat: no-repeat;
-  background-size: 30%;
+  background-size: 100%;
   background-position: 0 0;
-  animation: move-background 10s linear infinite;
+  animation: move-background 30s ease-out infinite;
+  -webkit-text-stroke: 2px rgb(255, 255, 255);
 }
 
-@keyframes move-background {
+/* @keyframes move-background {
   0% {
     background-position: left center;
   }
@@ -137,4 +140,26 @@ html {
   100% {
     background-position: left center;
   }
+}
+ */
+
+@keyframes move-background {
+  0% {
+    background-position: 0 0;
+  }
+  /* 50% {
+    background-position: 0 100%;
+  } */
+  100% {
+    background-position: 0 100%;
+  }
+}
+
+.hero-back {
+  background-image: url("/src/assets/back.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.5;
+  background-color: black;
+  color: aqua;
 }

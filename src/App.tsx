@@ -6,19 +6,18 @@ export default function App() {
   const { theme } = useContext(ThemeContext);
   return (
     <div
-      className={`${theme} app relative flex items-center min-h-screen flex-col bg-gradient-to-tr from-sky-800 via-transparent "via-80% to-white/[0.9]"`}
+      className={`${theme} app relative flex items-center min-h-screen flex-col `}
     >
       <NavBar />
       <main className="main w-full">
         <section
           id="home"
-          className="home relative flex flex-col content-center justify-center flex-wrap
-          bg-gradient-to-tr from-sky-900 via-transparent via-80% to-white/[0.9]"
+          className="home relative flex flex-col content-center justify-center flex-wrap"
         >
-          <div className="absolute h-full w-full flex items-center justify-center text-9xl text-slate-950">
-            Imagen de set up hero
+          <div className="absolute hero-back h-full w-full flex items-center justify-center text-9xl text-blue-700">
+            <code>&lt;</code>Web Developer<code>/&gt;</code>
           </div>
-          <div className="mario text-9xl z-10 text-white bg-black mix-blend-screen text-opacity-10">
+          <div className="mario  z-10 text-white bg-black mix-blend-screen text-opacity-20 font-serif">
             I'm Mario
           </div>
           <div className="text-4xl z-10">
