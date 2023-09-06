@@ -1,6 +1,8 @@
 import { useState, useContext, useEffect } from "react";
 import "./SwitchTheme.css";
 import ThemeContext from "./context/ThemeProvider";
+import { BsFillMoonStarsFill } from "react-icons/bs";
+import { FaSun } from "react-icons/fa";
 
 const SwitchTheme = () => {
   const [isOn, setIsOn] = useState(false);
@@ -25,18 +27,19 @@ const SwitchTheme = () => {
 
   return (
     <div className="relative w-10 mx-2 align-middle">
-      <input
-        type="checkbox"
-        name="toggle"
-        id="toggle"
-        className="toggle-checkbox absolute block w-6 h-6 rounded-full bg-black border-gray-200 border-2 appearance-none cursor-pointer"
-        checked={isOn}
-        onChange={handleToggle}
-      />
-      <label
-        htmlFor="toggle"
-        className="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer"
-      ></label>
+      <div
+        className={`${
+          theme === "dark" ? "toggle-checkbox-left" : "toggle-checkbox-right"
+        } absolute block w-6 h-6 rounded-full  opacity-90 border-gray-200 border-2 `}
+        onClick={handleToggle}
+      >
+        {theme === "dark" && <BsFillMoonStarsFill className="moon absolute" />}
+        {theme === "light" && <FaSun className="sun absolute" />}
+      </div>
+      <div
+        onClick={handleToggle}
+        className="block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer"
+      ></div>
     </div>
   );
 };

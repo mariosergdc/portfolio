@@ -1,11 +1,26 @@
-.toggle-checkbox {
+.toggle-checkbox-left {
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
   left: 0;
   transition: all 0.3s ease-in-out, left 0.3s ease-in-out;
-  cursor: pointer;
 }
 
-.toggle-checkbox:checked {
+.toggle-checkbox-right {
+  cursor: pointer;
   left: calc(100% - 24px);
   border-color: rgb(107, 114, 128);
   background-color: #ffffff;
+  transition: all 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+.moon {
+  left: 0.1rem;
+  top: 0.1rem;
+  color: black;
+}
+
+.sun {
+  right: 0.1rem;
+  top: 0.1rem;
+  color: rgb(0, 0, 0);
 }

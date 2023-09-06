@@ -163,3 +163,20 @@ html {
   background-color: black;
   color: aqua;
 }
+
+.social-media-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.social-media {
+  cursor: pointer;
+  font-size: 2rem;
+  padding-block: 0;
+}
+
+.linkedin {
+  font-size: 2.5rem;
+}
