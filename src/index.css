@@ -180,3 +180,23 @@ html {
 .linkedin {
   font-size: 2.5rem;
 }
+
+.project-img {
+  height: 40vh;
+  width: auto;
+  padding: 1rem;
+  border-radius: 2rem;
+}
+
+.project-img-container {
+  width: 50%;
+}
+
+.project-description {
+  width: 50%;
+  padding: 2rem;
+}
+
+.project {
+  margin-block: 2rem;
+}

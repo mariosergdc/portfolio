@@ -25,13 +25,25 @@ export default function App() {
           </div>
 
           <div className="social-media-container z-10">
-            <a>
+            <a
+              href="https://www.linkedin.com/in/mariosergdc/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <AiFillLinkedin className="social-media linkedin" />
             </a>
-            <a>
+            <a
+              href="https://github.com/mariosergdc"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <BsGithub className="social-media" />
             </a>
-            <a>
+            <a
+              href="https://leetcode.com/MarioSergDC/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <SiLeetcode className="social-media" />
             </a>
           </div>
@@ -51,17 +63,70 @@ export default function App() {
         </section>
         <section
           id="projects"
-          className="projects flex content-center justify-center flex-wrap
+          className="projects flex flex-col justify-start items-center flex-wrap
         bg-gradient-to-tr from-sky-900 via-transparent via-80% to-white/[0.9]"
         >
           <div>Projects</div>
-          <section className="projects-container">
-            <div>
-              <img
-                className="project-img"
-                src="./src/assets/back.jpeg"
-                alt=""
-              />
+          <section className="projects-container lg:max-w-screen-lg flex flex-col justify-start items-center">
+            <div className="project flex flex-col justify-between items-center md:flex-row">
+              <div className="project-img-container flex justify-center items-center ">
+                <img
+                  className="project-img"
+                  src="./src/assets/invoker-project.png"
+                  alt=""
+                />
+              </div>
+              <div className="project-description text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Suscipit aperiam omnis quod officiis quidem repellat unde itaque
+                eos, cum autem nisi iusto dolore veniam atque minus et
+                reiciendis sunt ipsa.
+              </div>
+            </div>
+            <div className="project flex flex-col justify-between items-center md:flex-row">
+              <div className="project-description order-2 text-center md:order-1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Suscipit aperiam omnis quod officiis quidem repellat unde itaque
+                eos, cum autem nisi iusto dolore veniam atque minus et
+                reiciendis sunt ipsa.
+              </div>
+              <div className="project-img-container order-1 flex justify-center items-center md:order-2">
+                <img
+                  className="project-img"
+                  src="./src/assets/back.jpeg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div className="project flex justify-between items-center">
+              <div className="project-img-container flex justify-center items-center">
+                <img
+                  className="project-img"
+                  src="./src/assets/back.jpeg"
+                  alt=""
+                />
+              </div>
+              <div className="project-description text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Suscipit aperiam omnis quod officiis quidem repellat unde itaque
+                eos, cum autem nisi iusto dolore veniam atque minus et
+                reiciendis sunt ipsa.
+              </div>
+            </div>
+            <div className="project flex justify-between items-center">
+              <div className="project-description text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Suscipit aperiam omnis quod officiis quidem repellat unde itaque
+                eos, cum autem nisi iusto dolore veniam atque minus et
+                reiciendis sunt ipsa.
+              </div>
+              <div className="project-img-container flex justify-center items-center">
+                <img
+                  className="project-img"
+                  src="./src/assets/back.jpeg"
+                  alt=""
+                />
+              </div>
             </div>
           </section>
         </section>

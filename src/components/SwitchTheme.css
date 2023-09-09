@@ -8,7 +8,6 @@
 .toggle-checkbox-right {
   cursor: pointer;
   left: calc(100% - 24px);
-  border-color: rgb(107, 114, 128);
   background-color: #ffffff;
   transition: all 0.3s ease-in-out, left 0.3s ease-in-out;
 }
