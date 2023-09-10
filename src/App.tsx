@@ -1,12 +1,23 @@
 import { useContext } from "react";
 import NavBar from "./components/NavBar";
 import ThemeContext from "./components/context/ThemeProvider";
-import { BsGithub, BsDownload } from "react-icons/bs";
+import { BsGithub, BsDownload, BsCodeSlash } from "react-icons/bs";
 import { SiLeetcode } from "react-icons/si";
 import { AiFillLinkedin } from "react-icons/ai";
+import { BiLinkExternal } from "react-icons/bi";
 
 export default function App() {
   const { theme } = useContext(ThemeContext);
+
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/assets/my-cv.pdf";
+    link.download = "my-cv.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <div
       className={`${theme} app relative flex items-center min-h-screen flex-col `}
@@ -48,8 +59,11 @@ export default function App() {
             </a>
           </div>
           <div className="z-10">
-            <a className="inline-flex justify-start items-center gap-2 cursor-pointer border bg-slate-400 mt-4">
-              <BsDownload />
+            <a
+              onClick={handleDownload}
+              className="bg-gray-300 hover:bg-gray-400 text-gray-800 cursor-pointer font-bold py-2 px-2 mt-2 rounded inline-flex items-center"
+            >
+              <BsDownload className=" w-4 h-4 mr-2" />
               Download CV
             </a>
           </div>
@@ -76,19 +90,37 @@ export default function App() {
                   alt=""
                 />
               </div>
-              <div className="project-description text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Suscipit aperiam omnis quod officiis quidem repellat unde itaque
-                eos, cum autem nisi iusto dolore veniam atque minus et
-                reiciendis sunt ipsa.
+              <div className="project-description">
+                <div>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Beatae adipisci corporis nihil iste mollitia perferendis
+                  nobis, illum, quod quidem aliquid numquam, officiis quam
+                  pariatur? Atque dolores perferendis rem libero? Impedit!
+                </div>
+                <div className="flex justify-evenly items-center mt-4">
+                  <button>
+                    <BsCodeSlash />
+                    GitHub
+                  </button>
+                  <button>
+                    <BiLinkExternal />
+                    GitHub Page
+                  </button>
+                </div>
               </div>
             </div>
             <div className="project flex flex-col justify-between items-center md:flex-row">
-              <div className="project-description order-2 text-center md:order-1">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Suscipit aperiam omnis quod officiis quidem repellat unde itaque
-                eos, cum autem nisi iusto dolore veniam atque minus et
-                reiciendis sunt ipsa.
+              <div className="project-description order-2 md:order-1">
+                <div>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Beatae adipisci corporis nihil iste mollitia perferendis
+                  nobis, illum, quod quidem aliquid numquam, officiis quam
+                  pariatur? Atque dolores perferendis rem libero? Impedit!
+                </div>
+                <div className="flex justify-evenly items-center">
+                  <button>GitHub</button>
+                  <button>GitHub Page</button>
+                </div>
               </div>
               <div className="project-img-container order-1 flex justify-center items-center md:order-2">
                 <img
@@ -98,29 +130,41 @@ export default function App() {
                 />
               </div>
             </div>
-            <div className="project flex justify-between items-center">
-              <div className="project-img-container flex justify-center items-center">
+            <div className="project flex flex-col justify-between items-center md:flex-row">
+              <div className="project-img-container flex justify-center items-center ">
                 <img
                   className="project-img"
-                  src="./src/assets/back.jpeg"
+                  src="./src/assets/invoker-project.png"
                   alt=""
                 />
               </div>
-              <div className="project-description text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Suscipit aperiam omnis quod officiis quidem repellat unde itaque
-                eos, cum autem nisi iusto dolore veniam atque minus et
-                reiciendis sunt ipsa.
+              <div className="project-description">
+                <div>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Beatae adipisci corporis nihil iste mollitia perferendis
+                  nobis, illum, quod quidem aliquid numquam, officiis quam
+                  pariatur? Atque dolores perferendis rem libero? Impedit!
+                </div>
+                <div className="flex justify-evenly items-center">
+                  <button>GitHub</button>
+                  <button>GitHub Page</button>
+                </div>
               </div>
             </div>
-            <div className="project flex justify-between items-center">
-              <div className="project-description text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Suscipit aperiam omnis quod officiis quidem repellat unde itaque
-                eos, cum autem nisi iusto dolore veniam atque minus et
-                reiciendis sunt ipsa.
+            <div className="project flex flex-col justify-between items-center md:flex-row">
+              <div className="project-description order-2 md:order-1">
+                <div>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Beatae adipisci corporis nihil iste mollitia perferendis
+                  nobis, illum, quod quidem aliquid numquam, officiis quam
+                  pariatur? Atque dolores perferendis rem libero? Impedit!
+                </div>
+                <div className="flex justify-evenly items-center">
+                  <button>GitHub</button>
+                  <button>GitHub Page</button>
+                </div>
               </div>
-              <div className="project-img-container flex justify-center items-center">
+              <div className="project-img-container order-1 flex justify-center items-center md:order-2">
                 <img
                   className="project-img"
                   src="./src/assets/back.jpeg"
