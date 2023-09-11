@@ -200,3 +200,7 @@ html {
 .project {
   margin-block: 2rem;
 }
+
+.code-icon {
+  stroke-width: 0.2px;
+}

@@ -3,9 +3,10 @@ import NavBar from "./components/NavBar";
 import ThemeContext from "./components/context/ThemeProvider";
 import { BsGithub, BsDownload, BsCodeSlash } from "react-icons/bs";
 import { SiLeetcode } from "react-icons/si";
-import { AiFillLinkedin } from "react-icons/ai";
-import { BiLinkExternal } from "react-icons/bi";
+import { AiFillHtml5, AiFillLinkedin } from "react-icons/ai";
+import { BiLinkExternal, BiLogoCss3, BiLogoJavascript } from "react-icons/bi";
 import pdf from "./assets/my-cv.pdf";
+import { FaReact } from "react-icons/fa";
 
 export default function App() {
   const { theme } = useContext(ThemeContext);
@@ -58,7 +59,7 @@ export default function App() {
               download="my-cv.pdf"
               className="bg-gray-300 hover:bg-gray-400 text-gray-800 cursor-pointer font-bold py-2 px-2 mt-2 rounded inline-flex items-center"
             >
-              <BsDownload className=" w-4 h-4 mr-2" />
+              <BsDownload className=" mr-2" />
               Download CV
             </a>
           </div>
@@ -87,19 +88,29 @@ export default function App() {
               </div>
               <div className="project-description">
                 <div>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Beatae adipisci corporis nihil iste mollitia perferendis
-                  nobis, illum, quod quidem aliquid numquam, officiis quam
-                  pariatur? Atque dolores perferendis rem libero? Impedit!
+                  This website is a free online tool designed to help Dota 2
+                  players improve their skills with Invoker hero. Our platform
+                  allows you to test your abilities and see how many spells you
+                  can cast with the hero in one minute. The goal is to enhance
+                  your gameplay and increase your chances of success.Try it out
+                  today!
                 </div>
-                <div className="flex justify-evenly items-center mt-4">
+                <div className="flex justify-center items-center gap-1">
+                  <FaReact /> React.js <BiLogoJavascript /> JS <BiLogoCss3 />
+                  CSS <AiFillHtml5 /> HTML
+                </div>
+                <div
+                  className={`flex justify-evenly items-center mt-4 ${
+                    theme === "dark" ? "text-blue-400" : "text-blue-800"
+                  } `}
+                >
                   <a
                     href="https://github.com/mariosergdc/InvokerApp"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex justify-center items-center gap-1"
                   >
-                    <BsCodeSlash />
+                    <BsCodeSlash size="1.8rem" className="code-icon" />
                     Get Code
                   </a>
                   <a
@@ -108,7 +119,7 @@ export default function App() {
                     rel="noopener noreferrer"
                     className="flex justify-center items-center gap-1"
                   >
-                    <BiLinkExternal />
+                    <BiLinkExternal size="1.5rem" />
                     Visit Page
                   </a>
                 </div>
