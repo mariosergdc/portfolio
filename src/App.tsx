@@ -93,14 +93,24 @@ export default function App() {
                   pariatur? Atque dolores perferendis rem libero? Impedit!
                 </div>
                 <div className="flex justify-evenly items-center mt-4">
-                  <button>
+                  <a
+                    href="https://github.com/mariosergdc/InvokerApp"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex justify-center items-center gap-1"
+                  >
                     <BsCodeSlash />
-                    GitHub
-                  </button>
-                  <button>
+                    Get Code
+                  </a>
+                  <a
+                    href="https://mariosergdc.github.io/InvokerApp/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex justify-center items-center gap-1"
+                  >
                     <BiLinkExternal />
-                    GitHub Page
-                  </button>
+                    Visit Page
+                  </a>
                 </div>
               </div>
             </div>
