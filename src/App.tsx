@@ -24,7 +24,10 @@ export default function App() {
           <div className="absolute hero-back h-full w-full flex items-center justify-center text-9xl text-blue-700 pt-24">
             <code>&lt;</code>Web Developer<code>/&gt;</code>
           </div>
-          <div className="mario  z-10 text-white bg-black mix-blend-screen text-opacity-20 font-serif">
+          <div
+            className={`mario z-10 text-white bg-black mix-blend-screen text-opacity-20 font-serif 
+            ${theme === "dark" ? "" : "mario-dark "}`}
+          >
             I'm Mario
           </div>
 

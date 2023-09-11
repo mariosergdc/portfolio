@@ -130,6 +130,11 @@ html {
   -webkit-text-stroke: 2px rgb(255, 255, 255);
 }
 
+.mario-dark {
+  mix-blend-mode: darken;
+  -webkit-text-stroke: 2px rgb(0, 0, 0);
+}
+
 /* @keyframes move-background {
   0% {
     background-position: left center;
