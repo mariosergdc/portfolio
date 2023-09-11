@@ -5,18 +5,10 @@ import { BsGithub, BsDownload, BsCodeSlash } from "react-icons/bs";
 import { SiLeetcode } from "react-icons/si";
 import { AiFillLinkedin } from "react-icons/ai";
 import { BiLinkExternal } from "react-icons/bi";
+import pdf from "./assets/my-cv.pdf";
 
 export default function App() {
   const { theme } = useContext(ThemeContext);
-
-  const handleDownload = () => {
-    const link = document.createElement("a");
-    link.href = "/assets/my-cv.pdf";
-    link.download = "my-cv.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
 
   return (
     <div
@@ -60,7 +52,10 @@ export default function App() {
           </div>
           <div className="z-10">
             <a
-              onClick={handleDownload}
+              href={pdf}
+              target="_blank"
+              rel="noopener noreferrer"
+              download="my-cv.pdf"
               className="bg-gray-300 hover:bg-gray-400 text-gray-800 cursor-pointer font-bold py-2 px-2 mt-2 rounded inline-flex items-center"
             >
               <BsDownload className=" w-4 h-4 mr-2" />
