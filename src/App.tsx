@@ -2,9 +2,15 @@ import { useContext } from "react";
 import NavBar from "./components/NavBar";
 import ThemeContext from "./components/context/ThemeProvider";
 import { BsGithub, BsDownload, BsCodeSlash } from "react-icons/bs";
-import { SiLeetcode } from "react-icons/si";
+import { SiExpress, SiLeetcode } from "react-icons/si";
 import { AiFillHtml5, AiFillLinkedin } from "react-icons/ai";
-import { BiLinkExternal, BiLogoCss3, BiLogoJavascript } from "react-icons/bi";
+import {
+  BiLinkExternal,
+  BiLogoCss3,
+  BiLogoJavascript,
+  BiLogoMongodb,
+  BiLogoNodejs,
+} from "react-icons/bi";
 import pdf from "./assets/my-cv.pdf";
 import { FaReact } from "react-icons/fa";
 
@@ -79,7 +85,7 @@ export default function App() {
           className="projects flex flex-col justify-start items-center flex-wrap
         bg-gradient-to-tr from-sky-900 via-transparent via-80% to-white/[0.9]"
         >
-          <div>Projects</div>
+          <h1 className="text-4xl mt-2">Projects</h1>
           <section className="projects-container lg:max-w-screen-lg flex flex-col justify-start items-center">
             <div className="project flex flex-col justify-between items-center md:flex-row">
               <div className="project-img-container flex justify-center items-center ">
@@ -95,10 +101,9 @@ export default function App() {
                   players improve their skills with Invoker hero. Our platform
                   allows you to test your abilities and see how many spells you
                   can cast with the hero in one minute. The goal is to enhance
-                  your gameplay and increase your chances of success.Try it out
-                  today!
+                  your gameplay and increase your chances of success.
                 </div>
-                <div className="flex justify-center items-center gap-1">
+                <div className="flex justify-center items-center gap-1 mt-2">
                   <FaReact /> React.js <BiLogoJavascript /> JS <BiLogoCss3 />
                   CSS <AiFillHtml5 /> HTML
                 </div>
@@ -131,20 +136,50 @@ export default function App() {
             <div className="project flex flex-col justify-between items-center md:flex-row">
               <div className="project-description order-2 md:order-1">
                 <div>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Beatae adipisci corporis nihil iste mollitia perferendis
-                  nobis, illum, quod quidem aliquid numquam, officiis quam
-                  pariatur? Atque dolores perferendis rem libero? Impedit!
+                  Website to display information about the past soccer cup
+                  during the vacations (2023) in Tacajó. We offer you the
+                  standings table, the top scorers, and the schedule of played
+                  matches.
                 </div>
-                <div className="flex justify-evenly items-center">
-                  <button>GitHub</button>
-                  <button>GitHub Page</button>
+                <div className="flex justify-center items-center gap-1 mt-2">
+                  <FaReact /> React.js <BiLogoJavascript /> JS <BiLogoCss3 />
+                  CSS <AiFillHtml5 /> HTML
+                </div>
+                <div className="flex justify-center items-center gap-1">
+                  <BiLogoNodejs />
+                  Node.js <SiExpress />
+                  Express <BiLogoMongodb />
+                  MongoDB
+                </div>
+                <div
+                  className={`flex justify-evenly items-center mt-4 ${
+                    theme === "dark" ? "text-blue-400" : "text-blue-800"
+                  } `}
+                >
+                  <a
+                    href="https://github.com/mariosergdc/soccer-app-client"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex justify-center items-center gap-1"
+                  >
+                    <BsCodeSlash size="1.8rem" className="code-icon" />
+                    Get Code
+                  </a>
+                  <a
+                    href="https://futbol-tacajo.onrender.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex justify-center items-center gap-1"
+                  >
+                    <BiLinkExternal size="1.5rem" />
+                    Visit Page
+                  </a>
                 </div>
               </div>
               <div className="project-img-container order-1 flex justify-center items-center md:order-2">
                 <img
                   className="project-img"
-                  src="./src/assets/back.jpeg"
+                  src="./src/assets/futbol-tacajo.png"
                   alt=""
                 />
               </div>
