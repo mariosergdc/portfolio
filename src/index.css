@@ -187,7 +187,7 @@ html {
 }
 
 .project-img {
-  height: 40vh;
+  height: 100%;
   width: auto;
   padding: 1rem;
   border-radius: 2rem;

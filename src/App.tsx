@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import NavBar from "./components/NavBar";
 import ThemeContext from "./components/context/ThemeProvider";
-import { BsGithub, BsDownload, BsCodeSlash } from "react-icons/bs";
+import { BsGithub, BsDownload, BsCodeSlash, BsBootstrap } from "react-icons/bs";
 import { SiExpress, SiLeetcode } from "react-icons/si";
 import { AiFillHtml5, AiFillLinkedin } from "react-icons/ai";
 import {
@@ -75,10 +75,35 @@ export default function App() {
         </section>
         <section
           id="about"
-          className="about flex content-center justify-center flex-wrap
+          className="about flex flex-col  justify-center items-center flex-wrap
           bg-gradient-to-tr from-sky-950 via-transparent via-80% to-white/[0.9]"
         >
-          <div>About</div>
+          <h1 className="text-4xl mt-2">About</h1>
+          <div className="max-w-screen-lg flex items-center justify-center flex-wrap">
+            <div className="w-1/2 flex flex-col items-center justify-center p-4">
+              <p>
+                Hello, my name is Mario Sergio Domínguez Consuegra and I am a
+                creative and innovative developer with a strong problem-solving
+                ability. I have a professional attitude and excellent technical
+                English skills. I am passionate about programming and always
+                seeking challenging projects that allow me to improve my skills
+                and knowledge. Currently, I am interested in joining a
+                development team as a frontend programmer.
+              </p>{" "}
+              <p>
+                As a licensed Computer Science professional, I have a great
+                interest in programming and problem-solving. I believe that
+                practice is the key to becoming a successful web developer, and
+                I dedicate time every day to improve my skills and learn new
+                technologies. I am committed to staying up-to-date with the
+                latest industry trends and best practices to deliver
+                high-quality work.
+              </p>
+            </div>
+            <div className="w-1/2 flex items-center justify-center p-4">
+              Skills
+            </div>
+          </div>
         </section>
         <section
           id="projects"
@@ -143,7 +168,8 @@ export default function App() {
                 </div>
                 <div className="flex justify-center items-center gap-1 mt-2">
                   <FaReact /> React.js <BiLogoJavascript /> JS <BiLogoCss3 />
-                  CSS <AiFillHtml5 /> HTML
+                  CSS <AiFillHtml5 /> HTML <BsBootstrap />
+                  Bootstrap
                 </div>
                 <div className="flex justify-center items-center gap-1">
                   <BiLogoNodejs />
