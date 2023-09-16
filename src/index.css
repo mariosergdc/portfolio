@@ -209,3 +209,30 @@ html {
 .code-icon {
   stroke-width: 0.2px;
 }
+
+.skill-logos {
+  height: 75px;
+  width: 75px;
+  /* object-fit: contain; */
+  background-color: gray;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.skill-logos img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.typescript-logo {
+  padding: 0.4rem;
+}
+
+.mysql-logo {
+  padding: 0.4rem;
+}

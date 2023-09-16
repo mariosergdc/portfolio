@@ -100,8 +100,66 @@ export default function App() {
                 high-quality work.
               </p>
             </div>
-            <div className="w-1/2 flex items-center justify-center p-4">
+            <div className="w-1/2 flex flex-col items-center justify-center p-4 ">
               Skills
+              <div className="flex items-center justify-center p-4 flex-wrap gap-4">
+                <div className="skill-logos">
+                  <img src="./src/assets/logos/react.svg" alt="react-logo" />
+                </div>
+                <div className="skill-logos">
+                  <img
+                    src="./src/assets/logos/javascript.svg"
+                    alt="javascript-logo"
+                  />
+                </div>
+                <div className="skill-logos">
+                  <img
+                    className="typescript-logo"
+                    src="./src/assets/logos/typescript.svg"
+                    alt="typescript-logo"
+                  />
+                </div>
+                <div className="skill-logos">
+                  <img src="./src/assets/logos/html.svg" alt="html-logo" />
+                </div>
+                <div className="skill-logos">
+                  <img src="./src/assets/logos/nodejs.svg" alt="nodejs-logo" />
+                </div>
+                <div className="skill-logos">
+                  <img src="./src/assets/logos/css.svg" alt="css-logo" />
+                </div>
+                <div className="skill-logos">
+                  <img
+                    src="./src/assets/logos/bootstrap.svg"
+                    alt="bootstrap-logo"
+                  />
+                </div>
+                <div className="skill-logos">
+                  <img
+                    src="./src/assets/logos/tailwind.svg"
+                    alt="tailwind-logo"
+                  />
+                </div>
+                <div className="skill-logos">
+                  <img
+                    src="./src/assets/logos/mongodb-icon.svg"
+                    alt="mongodb-logo"
+                  />
+                </div>
+                <div className="skill-logos">
+                  <img
+                    className="mysql-logo"
+                    src="./src/assets/logos/mysql.svg"
+                    alt="mysql-logo"
+                  />
+                </div>
+                <div className="skill-logos">
+                  <img src="./src/assets/logos/git.png" alt="git-logo" />
+                </div>
+                <div className="skill-logos">
+                  <img src="./src/assets/logos/github.svg" alt="github-logo" />
+                </div>
+              </div>
             </div>
           </div>
         </section>
