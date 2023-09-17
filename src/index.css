@@ -213,8 +213,7 @@ html {
 .skill-logos {
   height: 75px;
   width: 75px;
-  /* object-fit: contain; */
-  background-color: gray;
+  background-image: radial-gradient(#ffffff, 80%, #000000);
   margin: 0.5rem;
   padding: 0.5rem;
   border-radius: 50%;

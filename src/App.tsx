@@ -122,9 +122,7 @@ export default function App() {
                 <div className="skill-logos">
                   <img src="./src/assets/logos/html.svg" alt="html-logo" />
                 </div>
-                <div className="skill-logos">
-                  <img src="./src/assets/logos/nodejs.svg" alt="nodejs-logo" />
-                </div>
+
                 <div className="skill-logos">
                   <img src="./src/assets/logos/css.svg" alt="css-logo" />
                 </div>
@@ -139,6 +137,9 @@ export default function App() {
                     src="./src/assets/logos/tailwind.svg"
                     alt="tailwind-logo"
                   />
+                </div>
+                <div className="skill-logos">
+                  <img src="./src/assets/logos/nodejs.svg" alt="nodejs-logo" />
                 </div>
                 <div className="skill-logos">
                   <img
