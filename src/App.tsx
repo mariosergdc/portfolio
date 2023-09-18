@@ -27,7 +27,7 @@ export default function App() {
           id="home"
           className="home relative flex flex-col content-center justify-center flex-wrap"
         >
-          <div className="absolute hero-back h-full w-full flex items-center justify-center text-9xl text-blue-700 pt-24">
+          <div className="absolute hero-back h-full w-full flex items-center justify-center text-9xl text-blue-500 pt-24">
             <code>&lt;</code>Web Developer<code>/&gt;</code>
           </div>
           <div
@@ -76,7 +76,7 @@ export default function App() {
         <section
           id="about"
           className="about flex flex-col  justify-center items-center flex-wrap
-          bg-gradient-to-tr from-sky-950 via-transparent via-80% to-white/[0.9]"
+          bg-gradient-to-r from-sky-950  to-gray-500/[0.9]"
         >
           <h1 className="text-4xl mt-2">About</h1>
           <div className="max-w-screen-lg flex items-center justify-center flex-wrap">
@@ -167,7 +167,7 @@ export default function App() {
         <section
           id="projects"
           className="projects flex flex-col justify-start items-center flex-wrap
-        bg-gradient-to-tr from-sky-900 via-transparent via-80% to-white/[0.9]"
+          bg-gradient-to-r from-sky-950  to-gray-500/[0.9]"
         >
           <h1 className="text-4xl mt-2">Projects</h1>
           <section className="projects-container lg:max-w-screen-lg flex flex-col justify-start items-center">
@@ -273,42 +273,88 @@ export default function App() {
               <div className="project-img-container flex justify-center items-center ">
                 <img
                   className="project-img"
-                  src="./src/assets/invoker-project.png"
+                  src="./src/assets/contacts-app.png"
                   alt=""
                 />
               </div>
               <div className="project-description">
                 <div>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Beatae adipisci corporis nihil iste mollitia perferendis
-                  nobis, illum, quod quidem aliquid numquam, officiis quam
-                  pariatur? Atque dolores perferendis rem libero? Impedit!
+                  A webpage to store your contacts can be a practical and
+                  efficient solution to keep personal and professional contact
+                  information organized.
                 </div>
-                <div className="flex justify-evenly items-center">
-                  <button>GitHub</button>
-                  <button>GitHub Page</button>
+                <div className="flex justify-center items-center gap-1 mt-2">
+                  <FaReact /> React.js <BiLogoJavascript /> JS <BiLogoCss3 />
+                  CSS <AiFillHtml5 /> HTML <BsBootstrap />
+                  Bootstrap
+                </div>
+                <div className="flex justify-center items-center gap-1">
+                  <BiLogoNodejs />
+                  Node.js <SiExpress />
+                  Express <BiLogoMongodb />
+                  MongoDB
+                </div>
+                <div
+                  className={`flex justify-evenly items-center mt-4 ${
+                    theme === "dark" ? "text-blue-400" : "text-blue-800"
+                  } `}
+                >
+                  <a
+                    href="https://github.com/mariosergdc/contactsapp-client"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex justify-center items-center gap-1"
+                  >
+                    <BsCodeSlash size="1.8rem" className="code-icon" />
+                    Get Code
+                  </a>
+                  <a
+                    href="https://contactsapp-client.onrender.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex justify-center items-center gap-1"
+                  >
+                    <BiLinkExternal size="1.5rem" />
+                    Visit Page
+                  </a>
                 </div>
               </div>
             </div>
             <div className="project flex flex-col justify-between items-center md:flex-row">
               <div className="project-description order-2 md:order-1">
-                <div>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Beatae adipisci corporis nihil iste mollitia perferendis
-                  nobis, illum, quod quidem aliquid numquam, officiis quam
-                  pariatur? Atque dolores perferendis rem libero? Impedit!
+                <div>My CV</div>
+                <div className="flex justify-center items-center gap-1 mt-2">
+                  <FaReact /> React.js <BiLogoJavascript /> JS <BiLogoCss3 />
+                  CSS <AiFillHtml5 /> HTML
                 </div>
-                <div className="flex justify-evenly items-center">
-                  <button>GitHub</button>
-                  <button>GitHub Page</button>
+
+                <div
+                  className={`flex justify-evenly items-center mt-4 ${
+                    theme === "dark" ? "text-blue-400" : "text-blue-800"
+                  } `}
+                >
+                  <a
+                    href="https://github.com/mariosergdc/my-cv"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex justify-center items-center gap-1"
+                  >
+                    <BsCodeSlash size="1.8rem" className="code-icon" />
+                    Get Code
+                  </a>
+                  <a
+                    href="https://mariosergdc.github.io/my-cv/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex justify-center items-center gap-1"
+                  >
+                    <BiLinkExternal size="1.5rem" />
+                    Visit Page
+                  </a>
                 </div>
               </div>
               <div className="project-img-container order-1 flex justify-center items-center md:order-2">
-                <img
-                  className="project-img"
-                  src="./src/assets/back.jpeg"
-                  alt=""
-                />
+                <img className="project-img" src="./src/assets/cv.png" alt="" />
               </div>
             </div>
           </section>
@@ -316,7 +362,7 @@ export default function App() {
         <section
           id="contact"
           className="contact flex content-center justify-center flex-wrap
-        bg-gradient-to-tr from-sky-950 via-transparent via-80% to-white/[0.9]"
+          bg-gradient-to-r from-sky-950  to-gray-500/[0.9]"
         >
           Contact
         </section>

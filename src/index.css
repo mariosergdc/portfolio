@@ -166,7 +166,6 @@ html {
   background-size: cover;
   opacity: 0.5;
   background-color: black;
-  color: aqua;
 }
 
 .social-media-container {
@@ -214,6 +213,7 @@ html {
   height: 75px;
   width: 75px;
   background-image: radial-gradient(#ffffff, 80%, #000000);
+  background-image: radial-gradient(transparent, 80%, #ffffff);
   margin: 0.5rem;
   padding: 0.5rem;
   border-radius: 50%;
