@@ -13,6 +13,7 @@ import {
 } from "react-icons/bi";
 import pdf from "./assets/my-cv.pdf";
 import { FaReact } from "react-icons/fa";
+import ContactForm from "./components/ContactForm";
 
 export default function App() {
   const { theme } = useContext(ThemeContext);
@@ -82,22 +83,23 @@ export default function App() {
           <div className="max-w-screen-lg flex items-center justify-center flex-wrap">
             <div className="w-1/2 flex flex-col items-center justify-center p-4">
               <p>
-                Hello, my name is Mario Sergio Domínguez Consuegra and I am a
-                creative and innovative developer with a strong problem-solving
-                ability. I have a professional attitude and excellent technical
-                English skills. I am passionate about programming and always
-                seeking challenging projects that allow me to improve my skills
-                and knowledge. Currently, I am interested in joining a
-                development team as a frontend programmer.
-              </p>{" "}
+                I am Mario Sergio Domínguez Consuegra. As a licensed Computer
+                Science professional, I have a great interest in programming and
+                problem-solving. I believe that practice is the key to becoming
+                a successful web developer, and I dedicate time every day to
+                improve my skills and learn new technologies. I am committed to
+                staying up-to-date with the latest industry trends and best
+                practices to deliver high-quality work.
+              </p>
               <p>
-                As a licensed Computer Science professional, I have a great
-                interest in programming and problem-solving. I believe that
-                practice is the key to becoming a successful web developer, and
-                I dedicate time every day to improve my skills and learn new
-                technologies. I am committed to staying up-to-date with the
-                latest industry trends and best practices to deliver
-                high-quality work.
+                In conclusion, I am a dedicated and skilled developer with a
+                passion for programming and problem-solving. I have a strong
+                technical vocabulary in both Spanish and English, and I am
+                committed to staying up-to-date with the latest industry trends
+                and best practices. I am excited about the opportunity to join a
+                development team as a frontend programmer and contribute to
+                challenging projects that allow me to improve my skills and
+                knowledge.{" "}
               </p>
             </div>
             <div className="w-1/2 flex flex-col items-center justify-center p-4 ">
@@ -364,7 +366,12 @@ export default function App() {
           className="contact flex content-center justify-center flex-wrap
           bg-gradient-to-r from-sky-950  to-gray-500/[0.9]"
         >
-          Contact
+          <div className="max-w-screen-lg df-jcc-aic flex-wrap w-full">
+            <div className="w-1/2 df-jcc-aic flex-col">
+              Info Personal, Contáctanos
+            </div>
+            <ContactForm />
+          </div>
         </section>
       </main>
     </div>
