@@ -3,7 +3,7 @@ const ContactForm = () => {
     <div className="flex flex-col justify-center items-center gap-2 w-1/2">
       <p className="text-pop-up-top">Contact</p>
       <form
-        className="flex flex-col justify-center items-center gap-2 w-full border-2 border-red-500 p-4 rounded-lg"
+        className="flex flex-col justify-center items-center gap-2 w-full border-2 border-gray-700 p-4 rounded-lg"
         action="https://formsubmit.co/mariosergdc.webdev@gmail.com"
         method="POST"
       >
@@ -28,7 +28,7 @@ const ContactForm = () => {
           placeholder="Message"
         />
         <button
-          className="text-black w-full p-2 m-2 rounded-lg bg-green-800 cursor-pointer outline-none"
+          className="text-black w-full p-2 m-2 rounded-lg bg-green-400 cursor-pointer outline-none"
           type="submit"
         >
           Send
