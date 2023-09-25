@@ -20,7 +20,7 @@ export default function App() {
 
   return (
     <div
-      className={`${theme} app relative flex items-center min-h-screen flex-col `}
+      className={`${theme} app relative flex items-center min-h-screen flex-col font-playfair`}
     >
       <NavBar />
       <main className="main w-full">
@@ -32,7 +32,7 @@ export default function App() {
             <code>&lt;</code>Web Developer<code>/&gt;</code>
           </div>
           <div
-            className={`mario z-10 text-white bg-black mix-blend-screen text-opacity-20 font-serif 
+            className={`mario z-10 text-white bg-black mix-blend-screen text-opacity-20 
             ${theme === "dark" ? "" : "mario-dark "}`}
           >
             I'm Mario
@@ -367,7 +367,7 @@ export default function App() {
           bg-gradient-to-r from-sky-950  to-gray-500/[0.9]"
         >
           <div className="max-w-screen-lg df-jcc-aic flex-wrap w-full">
-            <div className="w-1/2 df-jcc-aic flex-col">
+            <div className="w-1/2 df-jcc-aic flex-col ">
               Info Personal, Contáctanos
             </div>
             <ContactForm />
