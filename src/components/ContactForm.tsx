@@ -1,7 +1,8 @@
 const ContactForm = () => {
   return (
     <div className="flex flex-col justify-center items-center gap-2 w-1/2">
-      <p className="text-pop-up-top">Contact</p>
+      <p className="header-texts">Contact</p>
+
       <form
         className="flex flex-col justify-center items-center gap-2 w-full border-2 border-gray-700 p-4 rounded-lg"
         action="https://formsubmit.co/mariosergdc.webdev@gmail.com"

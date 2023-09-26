@@ -29,49 +29,54 @@ export default function App() {
           className="home relative flex flex-col content-center justify-center flex-wrap"
         >
           <div className="absolute hero-back h-full w-full flex items-center justify-center text-9xl text-blue-500 pt-24">
-            <code>&lt;</code>Web Developer<code>/&gt;</code>
+            <div className="max-w-screen-lg">
+              <code>&lt;</code>Web Developer
+              <code>/&gt;</code>
+            </div>
           </div>
-          <div
-            className={`mario z-10 text-white bg-black mix-blend-screen text-opacity-20 
+          <div className="max-w-screen-lg flex flex-col items-start justify-center flex-wrap">
+            <div
+              className={`mario z-10 text-white bg-black mix-blend-screen text-opacity-20 
             ${theme === "dark" ? "" : "mario-dark "}`}
-          >
-            I'm Mario
-          </div>
+            >
+              I'm Mario
+            </div>
 
-          <div className="social-media-container z-10">
-            <a
-              href="https://www.linkedin.com/in/mariosergdc/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <AiFillLinkedin className="social-media linkedin" />
-            </a>
-            <a
-              href="https://github.com/mariosergdc"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <BsGithub className="social-media" />
-            </a>
-            <a
-              href="https://leetcode.com/MarioSergDC/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <SiLeetcode className="social-media" />
-            </a>
-          </div>
-          <div className="z-10">
-            <a
-              href={pdf}
-              target="_blank"
-              rel="noopener noreferrer"
-              download="my-cv.pdf"
-              className="bg-gray-300 hover:bg-gray-400 text-gray-800 cursor-pointer font-bold py-2 px-2 mt-2 rounded inline-flex items-center"
-            >
-              <BsDownload className=" mr-2" />
-              Download CV
-            </a>
+            <div className="social-media-container z-10">
+              <a
+                href="https://www.linkedin.com/in/mariosergdc/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <AiFillLinkedin className="social-media linkedin" />
+              </a>
+              <a
+                href="https://github.com/mariosergdc"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <BsGithub className="social-media" />
+              </a>
+              <a
+                href="https://leetcode.com/MarioSergDC/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <SiLeetcode className="social-media" />
+              </a>
+            </div>
+            <div className="z-10">
+              <a
+                href={pdf}
+                target="_blank"
+                rel="noopener noreferrer"
+                download="my-cv.pdf"
+                className="bg-gray-300 hover:bg-gray-400 text-gray-800 cursor-pointer font-bold py-2 px-2 mt-2 rounded inline-flex items-center"
+              >
+                <BsDownload className=" mr-2" />
+                Download CV
+              </a>
+            </div>
           </div>
         </section>
         <section
@@ -79,7 +84,7 @@ export default function App() {
           className="about flex flex-col  justify-center items-center flex-wrap
           bg-gradient-to-r from-sky-950  to-gray-500/[0.9]"
         >
-          <h1 className="text-4xl mt-2">About</h1>
+          <h1 className="header-texts mt-2">About</h1>
           <div className="max-w-screen-lg flex items-center justify-center flex-wrap">
             <div className="w-1/2 flex flex-col items-center justify-center p-4">
               <p>
@@ -94,12 +99,10 @@ export default function App() {
               <p>
                 In conclusion, I am a dedicated and skilled developer with a
                 passion for programming and problem-solving. I have a strong
-                technical vocabulary in both Spanish and English, and I am
-                committed to staying up-to-date with the latest industry trends
-                and best practices. I am excited about the opportunity to join a
-                development team as a frontend programmer and contribute to
-                challenging projects that allow me to improve my skills and
-                knowledge.{" "}
+                technical vocabulary in both Spanish and English. I am excited
+                about the opportunity to join a development team as a frontend
+                programmer and contribute to challenging projects that allow me
+                to improve my skills and knowledge.{" "}
               </p>
             </div>
             <div className="w-1/2 flex flex-col items-center justify-center p-4 ">
@@ -171,7 +174,7 @@ export default function App() {
           className="projects flex flex-col justify-start items-center flex-wrap
           bg-gradient-to-r from-sky-950  to-gray-500/[0.9]"
         >
-          <h1 className="text-4xl mt-2">Projects</h1>
+          <h1 className="header-texts mt-2">Projects</h1>
           <section className="projects-container lg:max-w-screen-lg flex flex-col justify-start items-center">
             <div className="project flex flex-col justify-between items-center md:flex-row">
               <div className="project-img-container flex justify-center items-center ">
@@ -366,7 +369,7 @@ export default function App() {
           className="contact flex content-center justify-center flex-wrap
           bg-gradient-to-r from-sky-950  to-gray-500/[0.9]"
         >
-          <div className="max-w-screen-lg df-jcc-aic flex-wrap w-full">
+          <div className="max-w-screen-lg df-jcc-aic flex-wrap w-full p-4">
             <div className="w-1/2 df-jcc-aic flex-col ">
               Info Personal, Contáctanos
             </div>
