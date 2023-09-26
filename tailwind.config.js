@@ -5,6 +5,7 @@ export default {
     extend: {
       fontFamily: {
         playfair: ["Playfair Display", "serif"],
+        anton: ["Anton", "sans-serif"],
       },
     },
   },

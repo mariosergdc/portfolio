@@ -5,6 +5,9 @@
 @font-face {
   font-family: playfair;
   src: url("./fonts/static/PlayfairDisplay-Medium.ttf");
+
+  font-family: anton;
+  src: url("./fonts/anton/Anton-Regular.ttf");
 }
 
 .brand {

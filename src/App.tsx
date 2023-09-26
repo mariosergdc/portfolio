@@ -36,7 +36,7 @@ export default function App() {
           </div>
           <div className="max-w-screen-lg flex flex-col items-start justify-center flex-wrap">
             <div
-              className={`mario z-10 text-white bg-black mix-blend-screen text-opacity-20 
+              className={`mario z-10 text-transparent mix-blend-screen  font-anton
             ${theme === "dark" ? "" : "mario-dark "}`}
             >
               I'm Mario

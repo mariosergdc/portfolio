@@ -9,9 +9,11 @@ const NavBar = () => {
     >
       <header className="container max-w-screen-lg grid grid-cols-3 navbar h-full items-center mx-auto ">
         <div className="brand-container flex  items-center justify-start ">
-          <img className="h-16" src="/m.png" alt="logo" />
+          <a href="#home">
+            <img className="h-16" src="/m.png" alt="logo" />
+          </a>
           <h1 className="brand text-2xl pl-6 lg:pl-1 font-serif">
-            MarioSergDC
+            <a href="#home">MarioSergDC</a>
           </h1>
         </div>
         <Menu />
