@@ -81,8 +81,7 @@ export default function App() {
         </section>
         <section
           id="about"
-          className="about flex flex-col  justify-center items-center flex-wrap
-          bg-gradient-to-r from-sky-950  to-gray-500/[0.9]"
+          className={`${theme} about flex flex-col  justify-center items-center flex-wrap`}
         >
           <h1 className="header-texts mt-2">About</h1>
           <div className="max-w-screen-lg flex items-center justify-center flex-wrap">
@@ -171,8 +170,7 @@ export default function App() {
         </section>
         <section
           id="projects"
-          className="projects flex flex-col justify-start items-center flex-wrap
-          bg-gradient-to-r from-sky-950  to-gray-500/[0.9]"
+          className={`${theme} projects flex flex-col justify-start items-center flex-wrap`}
         >
           <h1 className="header-texts mt-2">Projects</h1>
           <section className="projects-container lg:max-w-screen-lg flex flex-col justify-start items-center">
@@ -366,8 +364,7 @@ export default function App() {
         </section>
         <section
           id="contact"
-          className="contact flex content-center justify-center flex-wrap
-          bg-gradient-to-r from-sky-950  to-gray-500/[0.9]"
+          className={`${theme} contact flex content-center justify-center flex-wrap`}
         >
           <div className="max-w-screen-lg df-jcc-aic flex-wrap w-full p-4">
             <div className="w-1/2 df-jcc-aic flex-col ">
