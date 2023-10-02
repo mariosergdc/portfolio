@@ -85,27 +85,23 @@ export default function App() {
         >
           <h1 className="header-texts mt-2">About</h1>
           <div className="max-w-screen-lg flex items-center justify-center flex-wrap">
-            <div className="w-1/2 flex flex-col items-center justify-center p-4">
+            <div className="w-1/2 flex flex-col items-center justify-center p-4  text-xl">
               <p>
                 I am Mario Sergio Domínguez Consuegra. As a licensed Computer
                 Science professional, I have a great interest in programming and
-                problem-solving. I believe that practice is the key to becoming
-                a successful web developer, and I dedicate time every day to
-                improve my skills and learn new technologies. I am committed to
-                staying up-to-date with the latest industry trends and best
-                practices to deliver high-quality work.
-              </p>
-              <p>
-                In conclusion, I am a dedicated and skilled developer with a
-                passion for programming and problem-solving. I have a strong
-                technical vocabulary in both Spanish and English. I am excited
+                problem-solving, I have a strong technical vocabulary in both
+                Spanish and English. I believe that practice is the key to
+                becoming a successful web developer, and I dedicate time every
+                day to improve my skills and learn new technologies. I am
+                committed to staying up-to-date with the latest industry trends
+                and best practices to deliver high-quality work. I am excited
                 about the opportunity to join a development team as a frontend
                 programmer and contribute to challenging projects that allow me
-                to improve my skills and knowledge.{" "}
+                to improve my skills and knowledge.
               </p>
             </div>
             <div className="w-1/2 flex flex-col items-center justify-center p-4 ">
-              Skills
+              <div className="skills">Skills </div>
               <div className="flex items-center justify-center p-4 flex-wrap gap-4">
                 <div className="skill-logos">
                   <img src="./src/assets/logos/react.svg" alt="react-logo" />
@@ -173,7 +169,7 @@ export default function App() {
           className={`${theme} projects flex flex-col justify-start items-center flex-wrap`}
         >
           <h1 className="header-texts mt-2">Projects</h1>
-          <section className="projects-container lg:max-w-screen-lg flex flex-col justify-start items-center">
+          <section className="projects-container lg:max-w-screen-lg flex flex-col justify-start items-center text-xl">
             <div className="project flex flex-col justify-between items-center md:flex-row">
               <div className="project-img-container flex justify-center items-center ">
                 <img
@@ -325,7 +321,10 @@ export default function App() {
             </div>
             <div className="project flex flex-col justify-between items-center md:flex-row">
               <div className="project-description order-2 md:order-1">
-                <div>My CV</div>
+                <div>
+                  A professional portfolio is an excellent way to showcase your
+                  skills and qualifications.
+                </div>
                 <div className="flex justify-center items-center gap-1 mt-2">
                   <FaReact /> React.js <BiLogoJavascript /> JS <BiLogoCss3 />
                   CSS <AiFillHtml5 /> HTML
@@ -366,11 +365,15 @@ export default function App() {
           id="contact"
           className={`${theme} contact flex content-center justify-center flex-wrap`}
         >
-          <div className="max-w-screen-lg df-jcc-aic flex-wrap w-full p-4">
-            <div className="w-1/2 df-jcc-aic flex-col ">
-              Info Personal, Contáctanos
+          <div className="max-w-screen-lg df-jcc-aic flex-col flex-wrap w-full p-4">
+            <div className="header-texts mb-8">Contact</div>
+            <div className=" df-jcc-aic">
+              <div className="w-1/2 df-jcc-aic flex-col p-4 text-2xl">
+                If you want to collaborate with me on future projects or hire me
+                for your own projects, please don't hesitate to contact me.
+              </div>
+              <ContactForm />
             </div>
-            <ContactForm />
           </div>
         </section>
       </main>

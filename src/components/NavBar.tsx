@@ -1,7 +1,10 @@
+import { useContext } from "react";
 import Menu from "./Menu";
 import RightMenu from "./RightMenu";
+import ThemeContext from "./context/ThemeProvider";
 
 const NavBar = () => {
+  const { theme } = useContext(ThemeContext);
   return (
     <div
       className="sticky top-0 z-40 w-full h-16 lg:border-b lg:border-b-slate-500/10
