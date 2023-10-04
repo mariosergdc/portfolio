@@ -42,20 +42,20 @@
   cursor: pointer;
 }
 
-.nav-links::after {
+.under-link {
   content: "";
   position: absolute;
   bottom: 0px;
   height: 2px;
   width: 100%;
   left: 0;
-  background-color: rgb(21, 7, 54);
+  background-color: rgb(255, 255, 255);
   transition: 0.3s;
   transition-timing-function: ease-in-out;
   transform: scaleX(0);
 }
 
-.nav-links:hover::after {
+.nav-links:hover .under-link {
   transform: scaleX(1);
 }
 
