@@ -365,8 +365,8 @@ export default function App() {
           id="contact"
           className={`${theme} contact flex content-center justify-center flex-wrap`}
         >
-          <div className="max-w-screen-lg df-jcc-aic flex-col flex-wrap w-full p-4">
-            <div className="header-texts mb-8">Contact</div>
+          <div className="max-w-screen-lg flex flex-col content-between items-center flex-wrap w-full gap-4 p-4">
+            <div className="header-texts mb-8 mt-0">Contact</div>
             <div className=" df-jcc-aic">
               <div className="w-1/2 df-jcc-aic flex-col p-4 text-2xl">
                 If you want to collaborate with me on future projects or hire me
