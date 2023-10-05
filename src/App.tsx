@@ -367,8 +367,8 @@ export default function App() {
         >
           <div className="max-w-screen-lg flex flex-col content-between items-center flex-wrap w-full gap-4 p-4">
             <div className="header-texts mb-8 mt-0">Contact</div>
-            <div className=" df-jcc-aic">
-              <div className="w-1/2 df-jcc-aic flex-col p-4 text-2xl">
+            <div className=" lg:df-jcc-aic flex flex-col items-center justify-center">
+              <div className="w-full lg:w-1/2 df-jcc-aic flex-col p-4 text-2xl">
                 If you want to collaborate with me on future projects or hire me
                 for your own projects, please don't hesitate to contact me.
               </div>
