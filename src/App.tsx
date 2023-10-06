@@ -28,9 +28,9 @@ export default function App() {
           id="home"
           className="home relative flex flex-col content-center justify-center flex-wrap"
         >
-          <div className="absolute hero-back h-full w-full flex items-center justify-center text-9xl text-blue-500 pt-24">
-            <div className="max-w-screen-lg">
-              <code>&lt;</code>Web Developer
+          <div className="absolute hero-back h-full w-full flex items-center justify-center text-4xl sm:text-7xl lg:text-9xl text-blue-500 md:pt-24">
+            <div>
+              <code>&lt;</code>WebDeveloper
               <code>/&gt;</code>
             </div>
           </div>
@@ -84,8 +84,8 @@ export default function App() {
           className={`${theme} about flex flex-col  justify-center items-center flex-wrap`}
         >
           <h1 className="header-texts mt-2">About</h1>
-          <div className="max-w-screen-lg flex items-center justify-center flex-wrap">
-            <div className="w-1/2 flex flex-col items-center justify-center p-4  text-xl">
+          <div className="max-w-screen-lg md:flex-row flex flex-col items-center justify-center flex-wrap">
+            <div className="md:w-1/2 w-3/4 flex flex-col items-center justify-center p-4  text-xl">
               <p>
                 I am Mario Sergio Domínguez Consuegra. As a licensed Computer
                 Science professional, I have a great interest in programming and
@@ -100,7 +100,7 @@ export default function App() {
                 to improve my skills and knowledge.
               </p>
             </div>
-            <div className="w-1/2 flex flex-col items-center justify-center p-4 ">
+            <div className="md:w-1/2 w-full flex flex-col items-center justify-center p-4 ">
               <div className="skills">Skills </div>
               <div className="flex items-center justify-center p-4 flex-wrap gap-4">
                 <div className="skill-logos">
@@ -367,7 +367,7 @@ export default function App() {
         >
           <div className="max-w-screen-lg flex flex-col content-between items-center flex-wrap w-full gap-4 p-4">
             <div className="header-texts mb-8 mt-0">Contact</div>
-            <div className=" lg:df-jcc-aic flex flex-col items-center justify-center">
+            <div className=" md:flex-row flex flex-col items-center justify-center">
               <div className="w-full lg:w-1/2 df-jcc-aic flex-col p-4 text-2xl">
                 If you want to collaborate with me on future projects or hire me
                 for your own projects, please don't hesitate to contact me.
