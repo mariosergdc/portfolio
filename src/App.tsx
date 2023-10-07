@@ -202,7 +202,8 @@ export default function App() {
                     className="flex justify-center items-center gap-1"
                   >
                     <BsCodeSlash size="1.8rem" className="code-icon" />
-                    Get Code
+                    <p className="link-mobile">Code</p>
+                    <p className="link-desktop">Get Code</p>
                   </a>
                   <a
                     href="https://mariosergdc.github.io/InvokerApp/"
@@ -211,7 +212,8 @@ export default function App() {
                     className="flex justify-center items-center gap-1"
                   >
                     <BiLinkExternal size="1.5rem" />
-                    Visit Page
+                    <p className="link-mobile">Page</p>
+                    <p className="link-desktop">Visit Page</p>
                   </a>
                 </div>
               </div>
@@ -247,7 +249,8 @@ export default function App() {
                     className="flex justify-center items-center gap-1"
                   >
                     <BsCodeSlash size="1.8rem" className="code-icon" />
-                    Get Code
+                    <p className="link-mobile">Code</p>
+                    <p className="link-desktop">Get Code</p>
                   </a>
                   <a
                     href="https://futbol-tacajo.onrender.com/"
@@ -256,7 +259,9 @@ export default function App() {
                     className="flex justify-center items-center gap-1"
                   >
                     <BiLinkExternal size="1.5rem" />
-                    Visit Page
+
+                    <p className="link-mobile">Page</p>
+                    <p className="link-desktop">Visit Page</p>
                   </a>
                 </div>
               </div>
@@ -305,7 +310,8 @@ export default function App() {
                     className="flex justify-center items-center gap-1"
                   >
                     <BsCodeSlash size="1.8rem" className="code-icon" />
-                    Get Code
+                    <p className="link-mobile">Code</p>
+                    <p className="link-desktop">Get Code</p>
                   </a>
                   <a
                     href="https://contactsapp-client.onrender.com/"
@@ -314,7 +320,9 @@ export default function App() {
                     className="flex justify-center items-center gap-1"
                   >
                     <BiLinkExternal size="1.5rem" />
-                    Visit Page
+
+                    <p className="link-mobile">Page</p>
+                    <p className="link-desktop">Visit Page</p>
                   </a>
                 </div>
               </div>
@@ -342,7 +350,8 @@ export default function App() {
                     className="flex justify-center items-center gap-1"
                   >
                     <BsCodeSlash size="1.8rem" className="code-icon" />
-                    Get Code
+                    <p className="link-mobile">Code</p>
+                    <p className="link-desktop">Get Code</p>
                   </a>
                   <a
                     href="https://mariosergdc.github.io/my-cv/"
@@ -351,7 +360,8 @@ export default function App() {
                     className="flex justify-center items-center gap-1"
                   >
                     <BiLinkExternal size="1.5rem" />
-                    Visit Page
+                    <p className="link-mobile">Page</p>
+                    <p className="link-desktop">Visit Page</p>
                   </a>
                 </div>
               </div>

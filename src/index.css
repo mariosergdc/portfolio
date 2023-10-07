@@ -244,6 +244,14 @@ html {
     0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
 }
 
+.link-mobile {
+  display: block;
+}
+
+.link-desktop {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .header-texts {
     font-size: 5rem;
@@ -254,6 +262,12 @@ html {
   .project-description {
     width: 50%;
     padding: 2rem;
+  }
+  .link-mobile {
+    display: none;
+  }
+  .link-desktop {
+    display: block;
   }
 }
 
