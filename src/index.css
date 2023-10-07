@@ -156,7 +156,7 @@ html {
 }
 
 .hero-back {
-  background-image: url("/src/assets/back.jpeg");
+  background-image: url("/src/assets/back.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
