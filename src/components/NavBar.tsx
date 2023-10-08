@@ -1,10 +1,15 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import Menu from "./Menu";
 import RightMenu from "./RightMenu";
 import ThemeContext from "./context/ThemeProvider";
 
 const NavBar = () => {
   const { theme } = useContext(ThemeContext);
+  const [open, setOpen] = useState(false);
+
+  const handleOpen = () => {
+    setOpen(!open);
+  };
   return (
     <div
       className="sticky top-0 z-40 w-full h-16 lg:border-b lg:border-b-slate-500/10
@@ -19,8 +24,18 @@ const NavBar = () => {
             <a href="#home">MarioSergDC</a>
           </h1>
         </div>
-        <Menu />
-        <RightMenu />
+        <Menu open={open} handleOpen={handleOpen} />
+        <div className="flex items-center justify-end">
+          <RightMenu />
+          <div
+            onClick={handleOpen}
+            className={`hamburger ${open ? "is-active" : ""} `}
+          >
+            <div className="layer top"></div>
+            <div className="layer mid"></div>
+            <div className="layer bottom"></div>
+          </div>
+        </div>
       </header>
     </div>
   );
