@@ -301,6 +301,10 @@ html {
   transform: translateY(-200%) rotate(135deg) !important;
 }
 
+.d-none {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .header-texts {
     font-size: 5rem;
@@ -329,6 +333,9 @@ html {
   .hamburger {
     display: none;
   }
+  .d-none {
+    display: block;
+  }
 }
 
 .df-jcc-aic {
@@ -341,7 +348,4 @@ html {
   font-size: 2rem;
   text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc,
     0 50px 30px rgba(0, 0, 0, 0.3);
-}
-.d-none {
-  display: none;
 }

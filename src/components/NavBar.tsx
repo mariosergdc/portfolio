@@ -18,9 +18,9 @@ const NavBar = () => {
       <header className="container max-w-screen-lg grid md:grid-cols-3 grid-cols-2 navbar h-full items-center mx-auto ">
         <div className="brand-container flex  items-center justify-start ">
           <a href="#home">
-            <img className="h-16" src="/m.png" alt="logo" />
+            <img className="h-12 ml-3 md:h-16" src="/m.png" alt="logo" />
           </a>
-          <h1 className="brand text-2xl pl-6 lg:pl-1 font-serif">
+          <h1 className="brand hidden sm:block text-base sm:text-2xl sm:pl-1 lg:pl-2 font-serif">
             <a href="#home">MarioSergDC</a>
           </h1>
         </div>

@@ -28,7 +28,7 @@ export default function App() {
           id="home"
           className="home relative flex flex-col content-center justify-center flex-wrap"
         >
-          <div className="absolute hero-back h-full w-full flex items-center justify-center text-4xl sm:text-7xl lg:text-9xl text-blue-500 md:pt-24">
+          <div className="absolute hero-back h-full w-full flex items-center justify-center text-3xl sm:text-7xl lg:text-9xl text-blue-500 md:pt-24">
             <div>
               <code>&lt;</code>WebDeveloper
               <code>/&gt;</code>
@@ -186,7 +186,7 @@ export default function App() {
                   can cast with the hero in one minute. The goal is to enhance
                   your gameplay and increase your chances of success.
                 </div>
-                <div className="flex justify-center items-center gap-1 mt-2">
+                <div className="flex flex-wrap justify-center items-center gap-1 mt-2">
                   <FaReact /> React.js <BiLogoJavascript /> JS <BiLogoCss3 />
                   CSS <AiFillHtml5 /> HTML
                 </div>
@@ -226,12 +226,12 @@ export default function App() {
                   standings table, the top scorers, and the schedule of played
                   matches.
                 </div>
-                <div className="flex justify-center items-center gap-1 mt-2">
+                <div className="flex flex-wrap justify-center items-center gap-1 mt-2">
                   <FaReact /> React.js <BiLogoJavascript /> JS <BiLogoCss3 />
                   CSS <AiFillHtml5 /> HTML <BsBootstrap />
                   Bootstrap
                 </div>
-                <div className="flex justify-center items-center gap-1">
+                <div className="flex flex-wrap justify-center items-center gap-1">
                   <BiLogoNodejs />
                   Node.js <SiExpress />
                   Express <BiLogoMongodb />
@@ -287,12 +287,12 @@ export default function App() {
                   efficient solution to keep personal and professional contact
                   information organized.
                 </div>
-                <div className="flex justify-center items-center gap-1 mt-2">
+                <div className="flex flex-wrap justify-center items-center gap-1 mt-2">
                   <FaReact /> React.js <BiLogoJavascript /> JS <BiLogoCss3 />
                   CSS <AiFillHtml5 /> HTML <BsBootstrap />
                   Bootstrap
                 </div>
-                <div className="flex justify-center items-center gap-1">
+                <div className="flex flex-wrap justify-center items-center gap-1">
                   <BiLogoNodejs />
                   Node.js <SiExpress />
                   Express <BiLogoMongodb />
@@ -333,7 +333,7 @@ export default function App() {
                   A professional portfolio is an excellent way to showcase your
                   skills and qualifications.
                 </div>
-                <div className="flex justify-center items-center gap-1 mt-2">
+                <div className="flex flex-wrap justify-center items-center gap-1 mt-2">
                   <FaReact /> React.js <BiLogoJavascript /> JS <BiLogoCss3 />
                   CSS <AiFillHtml5 /> HTML
                 </div>
