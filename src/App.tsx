@@ -85,7 +85,7 @@ export default function App() {
         >
           <h1 className="header-texts mt-2">About</h1>
           <div className="max-w-screen-lg md:flex-row flex flex-col items-center justify-center flex-wrap">
-            <div className="md:w-1/2 w-3/4 flex flex-col items-center justify-center p-4  text-xl">
+            <div className="md:w-1/2 w-3/4 flex flex-col items-center justify-center mt-4 xs:mt-0 p-0 xs:p-4 text-sm xs:text-xl">
               <p>
                 I am Mario Sergio Domínguez Consuegra. As a licensed Computer
                 Science professional, I have a great interest in programming and
@@ -169,7 +169,7 @@ export default function App() {
           className={`${theme} projects flex flex-col justify-start items-center flex-wrap`}
         >
           <h1 className="header-texts mt-2">Projects</h1>
-          <section className="projects-container lg:max-w-screen-lg flex flex-col justify-start items-center text-xl">
+          <section className="projects-container lg:max-w-screen-lg flex flex-col justify-start items-center text-sm xs:text-xl">
             <div className="project flex flex-col justify-between items-center md:flex-row">
               <div className="project-img-container flex justify-center items-center ">
                 <img
@@ -376,9 +376,9 @@ export default function App() {
           className={`${theme} contact flex content-center justify-center flex-wrap`}
         >
           <div className="max-w-screen-lg flex flex-col content-between items-center flex-wrap w-full gap-4 p-4">
-            <div className="header-texts mb-8 mt-0">Contact</div>
+            <div className="header-texts mb-0 xs:mb-8 mt-0">Contact</div>
             <div className=" md:flex-row flex flex-col items-center justify-center">
-              <div className="w-full lg:w-1/2 df-jcc-aic flex-col p-4 text-2xl">
+              <div className="w-full lg:w-1/2 df-jcc-aic flex-col p-4 text-sm xs:text-2xl">
                 If you want to collaborate with me on future projects or hire me
                 for your own projects, please don't hesitate to contact me.
               </div>

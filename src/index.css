@@ -198,11 +198,11 @@ html {
 
 .project-description {
   width: 75%;
-  padding: 2rem;
+  padding: 0;
 }
 
 .project {
-  margin-block: 2rem;
+  margin-block: 1rem;
   max-width: 100%;
 }
 
@@ -211,8 +211,8 @@ html {
 }
 
 .skill-logos {
-  height: 75px;
-  width: 75px;
+  height: 50px;
+  width: 50px;
   background-image: radial-gradient(#ffffff, 80%, #000000);
   background-image: radial-gradient(transparent, 80%, #ffffff);
   margin: 0.5rem;
@@ -303,6 +303,21 @@ html {
 
 .d-none {
   display: none;
+}
+
+@media screen and (min-width: 480px) {
+  .skill-logos {
+    height: 75px;
+    width: 75px;
+  }
+  .project-description {
+    width: 75%;
+    padding: 2rem;
+  }
+  .project {
+    margin-block: 2rem;
+    max-width: 100%;
+  }
 }
 
 @media screen and (min-width: 768px) {
