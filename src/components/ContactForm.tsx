@@ -6,6 +6,12 @@ const ContactForm = () => {
         action="https://formsubmit.co/mariosergdc.webdev@gmail.com"
         method="POST"
       >
+        <input type="hidden" name="_captcha" value="false"></input>
+        <input
+          type="hidden"
+          name="_next"
+          value="https://mariosergdc.github.io/portfolio"
+        ></input>
         <input
           className="text-black w-full p-2 m-2 rounded-lg outline-none"
           type="text"
