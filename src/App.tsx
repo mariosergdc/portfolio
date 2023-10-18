@@ -104,61 +104,49 @@ export default function App() {
               <div className="skills">Skills </div>
               <div className="flex items-center justify-center p-4 flex-wrap gap-4">
                 <div className="skill-logos">
-                  <img src="./src/assets/logos/react.svg" alt="react-logo" />
+                  <img src="./logos/react.svg" alt="react-logo" />
                 </div>
                 <div className="skill-logos">
-                  <img
-                    src="./src/assets/logos/javascript.svg"
-                    alt="javascript-logo"
-                  />
+                  <img src="./logos/javascript.svg" alt="javascript-logo" />
                 </div>
                 <div className="skill-logos">
                   <img
                     className="typescript-logo"
-                    src="./src/assets/logos/typescript.svg"
+                    src="./logos/typescript.svg"
                     alt="typescript-logo"
                   />
                 </div>
                 <div className="skill-logos">
-                  <img src="./src/assets/logos/html.svg" alt="html-logo" />
+                  <img src="./logos/html.svg" alt="html-logo" />
                 </div>
 
                 <div className="skill-logos">
-                  <img src="./src/assets/logos/css.svg" alt="css-logo" />
+                  <img src="./logos/css.svg" alt="css-logo" />
                 </div>
                 <div className="skill-logos">
-                  <img
-                    src="./src/assets/logos/bootstrap.svg"
-                    alt="bootstrap-logo"
-                  />
+                  <img src="./logos/bootstrap.svg" alt="bootstrap-logo" />
                 </div>
                 <div className="skill-logos">
-                  <img
-                    src="./src/assets/logos/tailwind.svg"
-                    alt="tailwind-logo"
-                  />
+                  <img src="./logos/tailwind.svg" alt="tailwind-logo" />
                 </div>
                 <div className="skill-logos">
-                  <img src="./src/assets/logos/nodejs.svg" alt="nodejs-logo" />
+                  <img src="./logos/nodejs.svg" alt="nodejs-logo" />
                 </div>
                 <div className="skill-logos">
-                  <img
-                    src="./src/assets/logos/mongodb-icon.svg"
-                    alt="mongodb-logo"
-                  />
+                  <img src="./logos/mongodb-icon.svg" alt="mongodb-logo" />
                 </div>
                 <div className="skill-logos">
                   <img
                     className="mysql-logo"
-                    src="./src/assets/logos/mysql.svg"
+                    src="./logos/mysql.svg"
                     alt="mysql-logo"
                   />
                 </div>
                 <div className="skill-logos">
-                  <img src="./src/assets/logos/git.png" alt="git-logo" />
+                  <img src="./logos/git.png" alt="git-logo" />
                 </div>
                 <div className="skill-logos">
-                  <img src="./src/assets/logos/github.svg" alt="github-logo" />
+                  <img src="./logos/github.svg" alt="github-logo" />
                 </div>
               </div>
             </div>
@@ -174,7 +162,7 @@ export default function App() {
               <div className="project-img-container flex justify-center items-center ">
                 <img
                   className="project-img"
-                  src="./src/assets/invoker-project.png"
+                  src="./invoker-project.png"
                   alt=""
                 />
               </div>
@@ -266,20 +254,12 @@ export default function App() {
                 </div>
               </div>
               <div className="project-img-container order-1 flex justify-center items-center md:order-2">
-                <img
-                  className="project-img"
-                  src="./src/assets/futbol-tacajo.png"
-                  alt=""
-                />
+                <img className="project-img" src="./futbol-tacajo.png" alt="" />
               </div>
             </div>
             <div className="project flex flex-col justify-between items-center md:flex-row">
               <div className="project-img-container flex justify-center items-center ">
-                <img
-                  className="project-img"
-                  src="./src/assets/contacts-app.png"
-                  alt=""
-                />
+                <img className="project-img" src="./contacts-app.png" alt="" />
               </div>
               <div className="project-description">
                 <div>
@@ -366,7 +346,7 @@ export default function App() {
                 </div>
               </div>
               <div className="project-img-container order-1 flex justify-center items-center md:order-2">
-                <img className="project-img" src="./src/assets/cv.png" alt="" />
+                <img className="project-img" src="./cv.png" alt="" />
               </div>
             </div>
           </section>
