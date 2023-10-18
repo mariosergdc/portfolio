@@ -1,12 +1,20 @@
 import React, { createContext, useState } from "react";
 import { Theme } from "../types";
 
-const initialTheme: Theme = "dark";
+type ThemeContextType = {
+  theme: Theme;
+  handleTheme: (str: Theme) => void;
+};
+
+const initialTheme: ThemeContextType = {
+  theme: "dark",
+  handleTheme: () => {},
+};
 
 const ThemeContext = createContext(initialTheme);
 
 const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
-  const [theme, setTheme] = useState<Theme>(initialTheme);
+  const [theme, setTheme] = useState<Theme>(initialTheme.theme);
 
   const handleTheme = (str: Theme) => {
     setTheme(str);

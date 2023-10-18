@@ -1,10 +1,8 @@
-import { useContext, useState } from "react";
+import { useState } from "react";
 import Menu from "./Menu";
 import RightMenu from "./RightMenu";
-import ThemeContext from "./context/ThemeProvider";
 
 const NavBar = () => {
-  const { theme } = useContext(ThemeContext);
   const [open, setOpen] = useState(false);
 
   const handleOpen = () => {

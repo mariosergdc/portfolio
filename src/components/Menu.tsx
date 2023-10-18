@@ -1,7 +1,12 @@
 import { useContext } from "react";
 import ThemeContext from "./context/ThemeProvider";
 
-const Menu = ({ open, handleOpen }) => {
+type MenuProps = {
+  open: boolean;
+  handleOpen: () => void;
+};
+
+const Menu = ({ open, handleOpen }: MenuProps) => {
   const { theme } = useContext(ThemeContext);
   return (
     <nav
