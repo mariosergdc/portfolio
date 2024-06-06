@@ -259,13 +259,13 @@ html {
   top: 4rem;
 }
 
-.menu.is-active {
+/* .menu.is-active {
   display: flex;
   background-color: #0e4983e7;
   border-radius: 1rem;
   border-top-right-radius: 0;
   padding: 1rem;
-}
+} */
 
 .hamburger {
   position: relative;
@@ -304,6 +304,172 @@ html {
 .d-none {
   display: none;
 }
+
+/****************************************navbar2 ****************************************/
+
+.navbarcss{
+	position:relative;
+	height: 60px;
+	width:400px;
+	/* background:rgb(3 105 161); */
+  background: transparent;
+	
+
+}
+
+.rect{
+	position:absolute;
+	height:40px;
+	width:100%;
+  border-radius: 2rem;
+	background-color:black;
+	bottom:0;
+	
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+
+.menu-list{
+	width:100%;
+	display:flex;
+	align-items:center;
+	justify-content:flex-start;
+	color:white;
+	position: relative;
+}
+
+.menu-item{
+	width:100px;
+	height:50px;
+  margin-top: 24px;
+	display:flex;
+  flex-direction: column;
+	align-items:center;
+	justify-content:center;
+	z-index: 2;
+	cursor: pointer;
+	transition: all 1s ease;
+}
+
+.menu-item.active{
+	transform: translateY(-18px);
+}
+
+.indicator{
+	height:40px;
+	width:40px;
+	background: black;
+	border: 2px solid rgb(3 105 161);
+	border-radius:50%;
+	position:absolute;
+	top:-3px;
+	left:30px;
+	transition: all 1s ease;
+}
+
+.text{
+  cursor: auto;
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+ .indicator::before{
+	position:absolute;
+	border-top-right-radius:50%;
+	content:"";
+	width:8px;
+	height:8px;
+	background:black;
+	left:-10px;
+	top:18px;
+	box-shadow: 0 -3px 0 0 rgb(3 105 161);
+}
+
+.indicator::after{
+	position:absolute;
+	border-top-left-radius:50%;
+	content:"";
+	width:8px;
+	height:8px;
+	background:black;
+	right:-10px;
+	top:18px;
+	box-shadow: 0 -3px 0 0 rgb(3 105 161);
+} 
+
+.menu-item:nth-child(1).active ~ .indicator{
+    left: 30px;
+	animation: rotate  1s linear forwards;
+}
+.menu-item:nth-child(1).active > :nth-child(2){
+ 
+   opacity: 1;
+}
+
+.menu-item:nth-child(2).active ~ .indicator {
+    animation: rotate2  1s linear forwards;
+	left: 130px;
+	
+}
+.menu-item:nth-child(2).active > :nth-child(2){
+  opacity: 1;
+}
+
+
+.menu-item:nth-child(3).active ~ .indicator{
+	animation: rotate3  1s linear forwards;
+    left: 230px;
+}
+.menu-item:nth-child(3).active > :nth-child(2){
+  opacity: 1;
+}
+
+
+.menu-item:nth-child(4).active ~ .indicator{
+    animation: rotate4  1s linear forwards;
+    left: 330px;
+}
+.menu-item:nth-child(4).active > :nth-child(2){
+  opacity: 1;
+}
+
+
+@keyframes rotate {
+    0% {
+        transform:  scaleY(0) scaleX(2);
+    }
+    100% {
+        transform: scaleY(1) scaleX(1) ;
+    }
+}
+@keyframes rotate2 {
+    0% {
+        transform:  scaleY(0) scaleX(2);
+    }
+    100% {
+        transform: scaleY(1) scaleX(1);
+    }
+}
+@keyframes rotate3 {
+    0% {
+        transform:  scaleY(0) scaleX(2);
+    }
+    100% {
+        transform: scaleY(1) scaleX(1);
+    }
+}
+@keyframes rotate4 {
+    0% {
+        transform:  scaleY(0) scaleX(2);
+    }
+    100% {
+        transform: scaleY(1) scaleX(1);
+    }
+}
+
+/****************************************navbar2 end****************************************/
+
 
 @media screen and (min-width: 480px) {
   .skill-logos {
@@ -364,3 +530,4 @@ html {
   text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc,
     0 50px 30px rgba(0, 0, 0, 0.3);
 }
+

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Menu from "./Menu";
+import Menu2 from "./Menu2";
 import RightMenu from "./RightMenu";
 
 const NavBar = () => {
@@ -8,13 +8,23 @@ const NavBar = () => {
   const handleOpen = () => {
     setOpen(!open);
   };
+
+  const clickHome=()=>{
+    const menuList = document.querySelectorAll(".menu-item");
+      for (const el of menuList) {
+        if (el.classList.contains("active")) {
+          el.classList.remove("active")
+        }
+      }
+      menuList[0].classList.add("active") 
+  }
   return (
     <div
       className="sticky top-0 z-40 w-full h-16 lg:border-b lg:border-b-slate-500/10
-    bg-gradient-to-r from-sky-800 via-sky-700 via-80% to-white/[0.9] shadow-slate-50"
+    bg-gradient-to-b from-sky-700 via-sky-700 via-80% to-white/[0.9] shadow-slate-50"
     >
-      <header className="container max-w-screen-lg grid md:grid-cols-3 grid-cols-2 navbar h-full items-center mx-auto ">
-        <div className="brand-container flex  items-center justify-start ">
+      <header className="container max-w-screen-lg grid md:grid-cols-4 grid-cols-2 navbar h-full items-center mx-auto ">
+        <div className="brand-container flex  items-center justify-start " onClick={clickHome}>
           <a href="#home">
             <img className="h-12 ml-3 md:h-16" src="./m.png" alt="logo" />
           </a>
@@ -22,7 +32,7 @@ const NavBar = () => {
             <a href="#home">MarioSergDC</a>
           </h1>
         </div>
-        <Menu open={open} handleOpen={handleOpen} />
+        <Menu2 open={open} handleOpen={handleOpen} />
         <div className="flex items-center justify-end">
           <RightMenu />
           <div
