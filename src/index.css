@@ -320,7 +320,7 @@ html {
 .rect{
 	position:absolute;
 	height:40px;
-	width:100%;
+	width:400px;
   border-radius: 2rem;
 	background-color:black;
 	bottom:0;
@@ -348,7 +348,6 @@ html {
 	align-items:center;
 	justify-content:center;
 	z-index: 2;
-	cursor: pointer;
 	transition: all 1s ease;
 }
 
@@ -393,7 +392,7 @@ html {
 	width:8px;
 	height:8px;
 	background:black;
-	right:-10px;
+	right:-9.5px;
 	top:18px;
 	box-shadow: 0 -3px 0 0 rgb(3 105 161);
 } 
@@ -437,7 +436,7 @@ html {
 
 @keyframes rotate {
     0% {
-        transform:  scaleY(0) scaleX(2);
+        transform:  scaleY(0.5) scaleX(0.5);
     }
     100% {
         transform: scaleY(1) scaleX(1) ;
@@ -445,7 +444,7 @@ html {
 }
 @keyframes rotate2 {
     0% {
-        transform:  scaleY(0) scaleX(2);
+      transform:  scaleY(0.5) scaleX(0.5);
     }
     100% {
         transform: scaleY(1) scaleX(1);
@@ -453,7 +452,7 @@ html {
 }
 @keyframes rotate3 {
     0% {
-        transform:  scaleY(0) scaleX(2);
+      transform:  scaleY(0.5) scaleX(0.5);
     }
     100% {
         transform: scaleY(1) scaleX(1);
@@ -461,7 +460,7 @@ html {
 }
 @keyframes rotate4 {
     0% {
-        transform:  scaleY(0) scaleX(2);
+      transform:  scaleY(0.5) scaleX(0.5);
     }
     100% {
         transform: scaleY(1) scaleX(1);
