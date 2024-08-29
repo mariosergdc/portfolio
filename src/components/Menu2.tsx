@@ -1,5 +1,6 @@
-import { useContext, useEffect } from "react";
-import ThemeContext from "./context/ThemeProvider";
+import { useEffect } from "react";
+//import { useContext, useEffect } from "react";
+//import ThemeContext from "./context/ThemeProvider";
 import {  HiOutlineHomeModern } from "react-icons/hi2";
 import { BsPersonBoundingBox } from "react-icons/bs";
 import { IoDocumentsOutline } from "react-icons/io5";
@@ -11,26 +12,34 @@ type MenuProps = {
 };
 
 const Menu2 = ({ open, handleOpen }: MenuProps) => {
-  const { theme } = useContext(ThemeContext);
+  //const { theme } = useContext(ThemeContext);
   
+  useEffect(() => {
+    // Función para activar el elemento del menú
+    function ToggleActive(event:any){
+      const menuList = document.querySelectorAll(".menu-item");
+      menuList.forEach((el) => {
+        el.classList.remove("active"); // Elimina la clase "active" de todos los elementos
+      });
+      event.currentTarget.parentNode.classList.add("active"); // Agrega la clase "active" al elemento clicado
+    };
 
- useEffect(() => {
+    const menuList = document.querySelectorAll(".menu-item a");
     
+    // Agregar el event listener a cada enlace del menú
+    menuList.forEach((el) => {
+      el.addEventListener("click", ToggleActive);
+    });
 
-    function ToggleActive() {
-    const menuList = document.querySelectorAll(".menu-item");
-      for (const el of menuList) {
-        if (el.classList.contains("active")) {
-          el.classList.remove("active")
-        }
-      }
-      this.parentNode.classList.add("active")
-    }
-  const menuList = document.querySelectorAll(".menu-item a");
-    for (const el of menuList) {
-      el.addEventListener("click", ToggleActive)
-    }
-  }, []) 
+    // Limpiar el event listener al desmontar el componente
+    return () => {
+      menuList.forEach((el) => {
+        el.removeEventListener("click", ToggleActive);
+      });
+    };
+  }, []); 
+
+
   return (
     <nav
       className={`menu col-span-2 md:flex md:justify-center ${open ? "is-active" : ""}`}
